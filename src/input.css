@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "IOSEVKA";
+  src: url("/iosevka-ss18-regular.ttf");
+}
+
+.footnote {
+    --tw-text-opacity: 1;
+  color: rgb(234 88 12 / var(--tw-text-opacity));
+}
+
+.footnote:hover {
+    --tw-text-opacity: 1;
+  color: rgb(194 65 12 / var(--tw-text-opacity));
+}
+
+sup {
+    display: inline-block;
+    vertical-align: super; 
+    font-size: 60%;
+    font-weight: bold;
+}
+
+hr.solid {
+  border-top: 1px solid #585a33;
+}
+
+.link {
+}
+
+.link:hover{
+  --tw-text-opacity: 1;
+  color: rgb(194 65 12 / var(--tw-text-opacity));
+}
+
+.stars {
+  overflow: scroll;
+}
