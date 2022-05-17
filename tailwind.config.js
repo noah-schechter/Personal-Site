@@ -1,6 +1,6 @@
 module.exports = {
   darkMode: 'class',
-  content: ["/public/index.html"],
+  content: ["./public/index.html"],
   theme: {
     extend: {colors: {
       brown: '#2E2111',//from a darker shade of mushroom https://mushroomcoloratlas.com/mushroom/pisolithus_tinctorius
