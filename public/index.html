@@ -9,6 +9,11 @@
     <script src="VirtualSky/virtualsky.js" type="text/javascript"></script>
 </head> 
 <body class="dark:bg-brown">
+    <div id="cursor-chat-layer">
+        <input type="text" id="cursor-chat-box">
+      </div>
+      <script src="https://unpkg.com/cursor-chat"></script>
+      <link rel="stylesheet" type="text/css" href="https://unpkg.com/cursor-chat/dist/style.css"/>
     <script>
         var planetarium;
         S(document).ready(function() {
@@ -91,12 +96,28 @@
                         If you're looking to get to know me, let's instead find a time to <u><a class="link" href="mailto:noah.schechter1@gmail.com">chat</a></u>!
                     </p>
                     <p class="py-4 text-brown dark:text-white">
-                        <sup class="text-base footnote dark:text-white">
-                            <a href="#And_some_other" id="this_site_is">
+                        <sup class="text-base footnote hover: dark:text-white">
+                           
                             *
+                            
+                        </sup>
+                        See those dots? Those are the stars in my night sky. Use your mouse (or finger) to explore—it updates every second.<sup class="footnote text-xs">
+                            <a id="stars_less" href="#stars_more">
+                                **
+                            </a>
+                        </sup> 
+                    </p>
+                    <p class="py-4 text-brown dark:text-white">
+                        <sup class="text-base footnote hover: dark:text-white">
+                            
+                            /
+                            
+                        </sup>
+                        If someone else is reading this page right now, they can see your mouse. Type '/' to write a message. Press escape to exit.<sup class="footnote text-xs">
+                            <a id="cursor_less" href="#cursor_more">
+                                //
                             </a>
                         </sup>
-                        See those dots? Those are the stars in my night sky. Use your mouse (or finger) to explore—it updates every second. Thanks to <u><a href="https://lco.global/" class="link">Las Cumbres Observatory</a></u> and Stuart Lowe for the wonderful <a href="https://github.com/slowe/VirtualSky" class="link"><u>VisualSky</u></a> planetarium. They built it, I didn't.
                     </p>
                     <p class="py-4 text-brown dark:text-white">
                         <sup class="text-xs footnote dark:text-white">
@@ -215,6 +236,22 @@
             <hr class="solid">
             <div class="pt-2 text-xs" align="center">
                 <div align="justify">
+                    <p class="py-2 text-brown dark:text-white">
+                        <sup class="text-xs footnote dark:text-white">
+                            <a href="#stars_less" id="stars_more">
+                                **
+                            </a>
+                        </sup>
+                        Thanks to <u><a href="https://lco.global/" class="link">Las Cumbres Observatory</a></u> and Stuart Lowe for the wonderful <a href="https://github.com/slowe/VirtualSky" class="link"><u>VirtualSky</u></a> planetarium. They built it, I didn't.
+                    </p>
+                    <p class="py-2 text-brown dark:text-white">
+                        <sup class="text-xs footnote dark:text-white">
+                            <a href="#cursor_less" id="cursor_more">
+                                //
+                            </a>
+                        </sup>
+                        <u><a href="https://jzhao.xyz/" class="link">Jacky Zhao</a></u> built <u><a class="link" href="https://github.com/jackyzha0/cursor-chat">cursor chat</a></u>.
+                    </p>
                     <p>
                         <sup class="text-xs footnote dark:text-white">
                             <a href="#bio" id="inf">
