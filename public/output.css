@@ -476,6 +476,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 100vw;
 }
 
+.bg-cover {
+  background-size: cover;
+}
+
+.bg-no-repeat {
+  background-repeat: no-repeat;
+}
+
 .p-4 {
   padding: 1rem;
 }
@@ -509,6 +517,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .pt-8 {
   padding-top: 2rem;
+}
+
+.font-playfair {
+  font-family: PLAYFAIR, serif;
 }
 
 .font-iosevka {
@@ -564,6 +576,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   src: url("iosevka-ss18-regular.ttf");
 }
 
+@font-face {
+  font-family: "PLAYFAIR";
+
+  src: url("PlayfairDisplay-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: "INTER";
+
+  src: url("Inter-VariableFont_slnt,wght.ttf");
+}
+
 .footnote {
   --tw-text-opacity: 1;
   color: rgb(234 88 12 / var(--tw-text-opacity));
@@ -610,6 +634,12 @@ hr.solid {
 .dark .dark\:text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+@media (min-width: 640px) {
+  .sm\:bg-right-bottom {
+    background-position: right bottom;
+  }
 }
 
 @media (min-width: 768px) {

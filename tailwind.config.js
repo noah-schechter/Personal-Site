@@ -8,7 +8,9 @@ module.exports = {
       green: '#585a33' //taken from mushroom https://mushroomcoloratlas.com/mushroom/polyozellus_atroazulinus 
     },
     fontFamily: {
-      iosevka: ["IOSEVKA", "sans-serif"]
+      iosevka: ["IOSEVKA", "sans-serif"],
+      playfair: ["PLAYFAIR", "serif"],
+      inter: ["INTER", "serif"]
     }
     }
   },

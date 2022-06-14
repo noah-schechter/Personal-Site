@@ -7,6 +7,16 @@
   src: url("iosevka-ss18-regular.ttf");
 }
 
+@font-face {
+  font-family: "PLAYFAIR";
+  src: url("PlayfairDisplay-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: "INTER";
+  src: url("Inter-VariableFont_slnt,wght.ttf");
+}
+
 .footnote {
     --tw-text-opacity: 1;
   color: rgb(234 88 12 / var(--tw-text-opacity));
