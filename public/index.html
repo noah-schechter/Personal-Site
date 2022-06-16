@@ -8,11 +8,10 @@
     rel="stylesheet"> 
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌿</text></svg>">
     <script src="VirtualSky/stuquery.min.js"></script>
-    <script src="VirtualSky/virtualsky.js" type="text/javascript"></script>
+    <script src="VirtualSky/virtualskycopy.js" type="text/javascript"></script>
     <script>if(!sessionStorage.getItem("_swa")&&document.referrer.indexOf(location.protocol+"//"+location.host)!== 0){fetch("https://counter.dev/track?"+new URLSearchParams({referrer:document.referrer,screen:screen.width+"x"+screen.height,user:"noah.schechter1@gmail.com",utcoffset:"-7"}))};sessionStorage.setItem("_swa","1");</script>
 </head> 
 <body class="dark:bg-brown">
-    <div class="bg-no-repeat bg-cover sm:bg-right-bottom" style="background-image: url(paperboard-carton-surface-beige-plain.jpeg)"></div> <!-- https://www.freepik.com/free-photo/paperboard-carton-surface-beige-plain_1097062.htm#query=paper%20texture&position=19&from_view=keyword-->
     <div id="cursor-chat-layer">
         <input type="text" id="cursor-chat-box">
       </div>
@@ -24,8 +23,9 @@
             planetarium = S.virtualsky({
 		    id: 'starmap2',	// This should match the iD used in the DOM
             projection: 'stereo', 
+            spin: true,
 		mouse: true,
-		keyboard: false, 
+		keyboard: true, 
 		az: 0, 
 		negative: true, 
 		constellations: false, 
@@ -36,8 +36,7 @@
         showplanetlabels: false,
         cardinalpoints: false,
         transparent: true,
-        color: 'rgb(200,200,200)', 
-        live: true
+        color: 'rgb(200,200,200)'
 	    });
     });
     </script>
