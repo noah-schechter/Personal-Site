@@ -12,11 +12,6 @@
     <script>if(!sessionStorage.getItem("_swa")&&document.referrer.indexOf(location.protocol+"//"+location.host)!== 0){fetch("https://counter.dev/track?"+new URLSearchParams({referrer:document.referrer,screen:screen.width+"x"+screen.height,user:"noah.schechter1@gmail.com",utcoffset:"-7"}))};sessionStorage.setItem("_swa","1");</script>
 </head> 
 <body class="dark:bg-brown">
-    <div id="cursor-chat-layer">
-        <input type="text" id="cursor-chat-box">
-      </div>
-      <script src="https://unpkg.com/cursor-chat"></script>
-      <link rel="stylesheet" type="text/css" href="https://unpkg.com/cursor-chat/dist/style.css"/>
     <script>
         var planetarium;
         S(document).ready(function() {
@@ -25,7 +20,7 @@
             projection: 'stereo', 
             spin: true,
 		mouse: true,
-		keyboard: true, 
+		keyboard: false, 
 		az: 0, 
 		negative: true, 
 		constellations: false, 
@@ -41,14 +36,13 @@
     });
     </script>
     <div id="starmap2" class="w-screen h-64"></div>
-    </div>
     <div class="p-4 md:grid md:grid-cols-5 dark:text-white">
         <div class="md:col-start-2 md:col-end-5">
             <div class="py-2">
             </div>
             <div class="py-4" align="center">
                 <h1 class="text-6xl md:text-8xl font-playfair font-bold text-brown dark:text-white">
-                    I'm Noah.<sup class="text-xl md:text-3xl footnote">
+                    I'm Noah.<sup class="text-xl md:text-2xl font-sans footnote">
                         <a id="I'm_noah" href="#other_things_too">
                             1
                         </a>
@@ -96,7 +90,7 @@
                                 &#8734;
                             </a>
                         </sup> 
-                        If you're looking to get to know me, let's instead find a time to <u><a class="link" href="mailto:noah.schechter1@gmail.com">chat</a></u>!
+                        If you're looking to get to know me, let's instead find a time to chat! Reach out at noah.schechter1 at gmail.com
                     </p>
                     <p class="py-4 text-brown dark:text-white">
                         <sup class="text-xs footnote dark:text-white">
@@ -121,7 +115,6 @@
                                 9
                             </a>
                         </sup>
-                    </p>
                     </p>
                     <p class="py-4 text-brown dark:text-white">
                         <sup class="font-semibold text-xs footnote dark:text-white">
@@ -181,23 +174,11 @@
                             *
                             
                         </sup>
-                        See those dots? Those are the stars in my night sky. Use your mouse (or finger) to explore—it updates every second.<sup class="footnote text-xs">
+                        See those dots? Those are the stars in my night sky. Use your mouse (or finger) to explore.<sup class="footnote text-xs">
                             <a id="stars_less" href="#stars_more">
                                 **
                             </a>
                         </sup> 
-                    </p>
-                    <p class="py-2 text-brown dark:text-white">
-                        <sup class="text-sm footnote hover: dark:text-white">
-                            
-                            /
-                            
-                        </sup>
-                        If someone else is reading this page right now, they can see your mouse. Type '/' to write a message. Press escape to exit.<sup class="footnote text-xs">
-                            <a id="cursor_less" href="#cursor_more">
-                                //
-                            </a>
-                        </sup>
                     </p>
                     <p class="py-2 text-brown dark:text-white">
                         <sup class="text-xs footnote dark:text-white">
@@ -206,14 +187,6 @@
                             </a>
                         </sup>
                         Thanks to <u><a href="https://lco.global/" class="link">Las Cumbres Observatory</a></u> and Stuart Lowe for the wonderful <a href="https://github.com/slowe/VirtualSky" class="link"><u>VirtualSky</u></a> planetarium. They built it, I didn't.
-                    </p>
-                    <p class="py-2 text-brown dark:text-white">
-                        <sup class="text-xs footnote dark:text-white">
-                            <a href="#cursor_less" id="cursor_more">
-                                //
-                            </a>
-                        </sup>
-                        <u><a href="https://jzhao.xyz/" class="link">Jacky Zhao</a></u> built <u><a class="link" href="https://github.com/jackyzha0/cursor-chat">cursor chat</a></u>.
                     </p>
                     <p>
                         <sup class="text-xs footnote dark:text-white">
@@ -236,6 +209,7 @@
                 </div>
             </div>
         </div>
+    </div>
     </div>
 </div>
 </body>
