@@ -1630,7 +1630,7 @@ VirtualSky.prototype.createSky = function(){
 	this.registerKey(63,function(){ this.toggleHelp(); });
 
 	this.drawImmediate();
-	this.spinIt(30); //Noah's addition. This spins the stars. 
+	this.spinIt(15); //Noah's addition. This spins the stars. 
 };
 
 VirtualSky.prototype.changeMagnitude = function(m){
